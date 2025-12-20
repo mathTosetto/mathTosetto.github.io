@@ -1,21 +1,284 @@
-/* About Me Section */
-.about-me {
-    background-color: #ffffff;
-    padding: 40px 0;
+/* =========================
+   Base / Reset
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #0e0e10;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Layout
+========================= */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* =========================
+   Navigation
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.nav-left {
+  font-weight: 600;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #bbb;
+}
+
+.nav-right a:hover,
+.nav-right a.active {
+  color: #fff;
+}
+
+/* =========================
+   Hero
+========================= */
+.hero {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  min-width: 240px;
+}
+
+.avatar img {
+  width: 200px;
+  max-width: 100%;
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.hero-content h3 {
+  margin-top: 8px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.skills {
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-.about-me h2 {
-    font-size: 2rem;
-    color: #34495e;
-    margin-bottom: 20px;
+  .avatar {
+    min-width: unset;
+  }
 }
 
-.about-me p {
-    font-size: 1.2rem;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+/* =========================
+   Buttons
+========================= */
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Variants */
+.linkedin { background: #0a66c2; }
+.github   { background: #24292f; }
+.email    { background: #e5533d; }
+.cv       { background: #333; }
+
+.btn.cv::after {
+  content: " ↓";
+}
+
+/* =========================
+   About
+========================= */
+.about-card {
+  background: #16161a;
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+/* =========================
+   Accordion
+========================= */
+.accordion {
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background: #16161a;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header:hover {
+  background: #1f1f26;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background: #0e0e10;
+}
+
+.accordion-content p {
+  margin-top: 0;
+}
+
+.accordion-content a {
+  display: inline-block;
+  margin: 10px 0;
+  color: #4ea1ff;
+  text-decoration: none;
+}
+
+.accordion-content img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.small-img {
+  max-width: 300px;
+}
+
+.tools {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Medium Articles
+========================= */
+.medium-articles {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+.medium-articles h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.medium-articles hr {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-list li {
+  margin-bottom: 12px;
+}
+
+.article-list a {
+  color: #4ea1ff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.article-list a:hover {
+  text-decoration: underline;
 }

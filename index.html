@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <title>Matheus Tosetto</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Your Name</h1>
-        <p>Data Engineer | Web Developer | Technology Enthusiast</p>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">Portfolio</div>
+        <div class="nav-right">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/projects.html">Projects</a>
+            <a href="pages/python-projects.html">Python Projects</a>
+            <a href="pages/medium-articles.html">Medium Articles</a>
+        </div>
+    </nav>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <main class="container">
+        <section class="page-container hero">
+            <section class="hero">
+                <div class="avatar">
+                    <img src="assets/images/photo-profile.jpeg" alt="Avatar" />
+                </div>
 
-        <!-- About Me Section -->
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Hello! I'm [Your Name], a passionate data engineer and web developer with a strong interest in technology, automation, and data-driven projects. 
-            I enjoy building robust solutions that help businesses make informed decisions through the power of data. In my spare time, I love to contribute 
-            to open-source projects, read tech blogs, and continuously learn new technologies. This portfolio showcases some of my work and projects.
-            </p>
+                <div class="hero-content">
+                    <h1>Matheus Tosetto</h1>
+                    <h3>Data Engineer @ AXA Ireland</h3>
+
+                    <p class="skills">Python | Azure | MLOps</p>
+                    <hr />
+
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/matheus-brizolla/" target="_blank"
+                            class="btn linkedin">LinkedIn</a>
+                        <a href="https://github.com/mathTosetto" target="_blank" class="btn github">GitHub</a>
+                        <a href="mailto:22848645+mathTosetto@users.noreply.github.com" class="btn email">Email</a>
+                        <a href="#" class="btn cv">Curriculum Vitae</a>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <!-- Intro Section -->
-        <section class="intro">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Here are some of the projects I've been working on. Feel free to browse and check out the code on GitHub!</p>
+        <!-- About Me -->
+        <section class="page-container hero">
+            <section class="about-card">
+                <h2>Who am I</h2>
+                <p>
+                    Data Engineer focused on building reliable data platforms, MLOps pipelines,
+                    and automation in cloud environments.
+                </p>
+            </section>
         </section>
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Project One</h3>
-                <p>A brief description of the project. It could be a data engineering pipeline, a web app, or any project you've done.</p>
-                <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Project Two</h3>
-                <p>A brief description of another project. Highlight the key features and what makes it interesting.</p>
-                <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>Project Three</h3>
-                <p>A description of the third project. It could be related to data visualization, analysis, or any other tech stack you're familiar with.</p>
-                <a href="https://github.com/yourusername/project-three" target="_blank">View on GitHub</a>
-            </div>
-
-            <!-- Add more projects here -->
-        </section>
-    </div>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2024 Your Name | <a href="mailto:your.email@example.com">Contact Me</a></p>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
-    </footer>
-
+    </main>
 </body>
+
 </html>
