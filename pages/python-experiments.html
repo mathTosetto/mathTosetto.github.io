@@ -29,7 +29,7 @@
 
             <!-- Collapsible Header -->
             <button class="accordion-header">
-                <span class="title">DevOps Enhancement – UV Library</span>
+                <span class="title">DevOps Enhancement - UV Library</span>
                 <span class="icon">▾</span>
             </button>
 
@@ -125,8 +125,7 @@
                         </div>
                     </div>
 
-                    <img src="../assets/images/cookiecutter.png" alt="Streamlining daily workflows with Cookiecutter"
-                        class="small-img" />
+                    <img src="../assets/images/cookiecutter.png" alt="Streamlining daily workflows with Cookiecutter" />
 
                     <div class="footer">
                         <div class="tools">
@@ -136,7 +135,7 @@
                         <div class="links">
                             <a href="https://github.com/mathTosetto/cookiecutter_streamlit" target="_blank" class="cta">
                                 Streamlit Template →
-                            </a>
+                            </a></br>
                             <a href="https://github.com/mathTosetto/cookiecutter_generic_project" target="_blank"
                                 class="cta">
                                 Generic Python Template →
@@ -259,7 +258,10 @@
                     <pre><code class="language-python">
 from typing import List
 
-def add_to_list_mutable_default(item: str, list_items: List[str] = []) -> List[str]:
+def add_to_list_mutable_default(
+    item: str,
+    list_items: List[str] = []
+) -> List[str]:
     list_items.append(item)
     return list_items
 
