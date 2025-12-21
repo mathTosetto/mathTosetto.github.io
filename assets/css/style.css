@@ -93,15 +93,6 @@ hr {
   border-radius: 8px;
 }
 
-.value-prop {
-  margin-top: 10px;
-  margin-bottom: 16px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #d0d0d0;
-  max-width: 480px;
-}
-
 .hero-content {
   max-width: 520px;
 }
@@ -117,6 +108,15 @@ hr {
   color: #ccc;
 }
 
+.value-prop {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 480px;
+}
+
 .skills {
   display: flex;
   gap: 10px;
@@ -124,7 +124,9 @@ hr {
   margin: 20px 0;
 }
 
-/* Base pill */
+/* =========================
+   Skill Pills
+========================= */
 .skill {
   background: #1a1a1f;
   border: 1px solid #2a2a2a;
@@ -136,14 +138,12 @@ hr {
   transition: all 0.2s ease;
 }
 
-/* Hover interaction */
 .skill:hover {
   transform: translateY(-3px);
   border-color: #4ea1ff;
   background: #202028;
 }
 
-/* Category accents (subtle, not loud) */
 .skill.core {
   border-color: #4ea1ff33;
 }
@@ -156,17 +156,6 @@ hr {
   border-color: #ff9f4333;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-  .avatar {
-    min-width: unset;
-  }
-}
 
 /* =========================
    Buttons
@@ -189,7 +178,6 @@ hr {
   transform: translateY(-2px);
 }
 
-/* Variants */
 .linkedin { background: #0a66c2; }
 .github   { background: #24292f; }
 .email    { background: #e5533d; }
@@ -200,7 +188,7 @@ hr {
 }
 
 /* =========================
-   About
+   About Section
 ========================= */
 .about-card {
   background: #16161a;
@@ -209,13 +197,11 @@ hr {
   animation: fadeInUp 0.8s ease forwards;
 }
 
-/* Section title */
 .about h2 {
   margin-bottom: 16px;
   font-size: 24px;
 }
 
-/* Paragraphs */
 .about p {
   font-size: 15px;
   line-height: 1.65;
@@ -223,21 +209,17 @@ hr {
   margin-bottom: 14px;
 }
 
-/* Divider */
 .about hr {
-  border: none;
   border-top: 1px solid #2a2a2a;
   margin: 24px 0;
 }
 
-/* Highlights subtitle */
 .about-subtitle {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 600;
 }
 
-/* Highlights list */
 .about ul {
   padding-left: 18px;
   margin: 0;
@@ -278,17 +260,12 @@ hr {
   font-weight: 600;
 }
 
-.accordion-header .tag {
-  font-size: 12px;
-  background: #1f3a5f;
-  color: #4ea1ff;
-  padding: 4px 10px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-
 .accordion-header:hover {
   background: #1f1f26;
+}
+
+.icon {
+  font-size: 18px;
 }
 
 .accordion-content {
@@ -297,21 +274,9 @@ hr {
   background: #0e0e10;
 }
 
-.accordion-content p {
-  margin-top: 0;
-}
-
 .accordion-content a {
-  display: inline-block;
-  margin: 10px 0;
   color: #4ea1ff;
   text-decoration: none;
-}
-
-.accordion-content img {
-  width: 100%;
-  border-radius: 6px;
-  margin: 15px 0;
 }
 
 .small-img {
@@ -322,10 +287,6 @@ hr {
   margin-top: 15px;
   font-size: 14px;
   color: #aaa;
-}
-
-.icon {
-    font-size: 18px;
 }
 
 @keyframes fadeInUp {
@@ -376,14 +337,26 @@ hr {
   font-weight: 600;
 }
 
-/* Hover effect */
 .article-card:hover {
   transform: translateY(-4px);
   border-color: #4ea1ff;
   background: #1c1c22;
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    min-width: unset;
+  }
+}
+
 @media (max-width: 700px) {
   .articles-grid {
     grid-template-columns: 1fr;
@@ -394,15 +367,13 @@ hr {
    Project Card (Inner)
 ========================= */
 .project-card {
+  background: #0e0e10;
+  border: 1px solid #2a2a2f;
+  border-radius: 10px;
   padding: 25px;
-  animation: fadeInUp 0.4s ease forwards;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.6s ease forwards;
   position: relative;
-}
-
-.project-header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
 }
 
 .summary {
@@ -420,13 +391,13 @@ hr {
 .highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .highlights div {
   background: #16161a;
-  padding: 12px;
+  padding: 10px;
   border-radius: 6px;
   font-size: 14px;
 }
@@ -499,6 +470,10 @@ hr {
   font-size: 14px;
 }
 
+
+/* =========================
+   Images
+========================= */
 .project-card img {
   width: 100%;
   border-radius: 6px;
@@ -509,6 +484,9 @@ hr {
   max-width: 350px;
 }
 
+/* =========================
+   Footer / Tools
+========================= */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -523,8 +501,8 @@ hr {
 
 .cta {
   color: #4ea1ff;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .cta:hover {
@@ -545,7 +523,9 @@ hr {
   }
 }
 
-/* Overview row */
+/* =========================
+   Overview Row
+========================= */
 .overview-row {
   display: flex;
   justify-content: space-between;

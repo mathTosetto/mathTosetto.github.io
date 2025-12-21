@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Projects</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,116 +26,267 @@
 
         <!-- Project 1 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                DevOps enhancement – UV library
+                <span class="title">DevOps Enhancement – UV Library</span>
                 <span class="icon">▾</span>
             </button>
+
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Project to prove that using UV can help decrease pipeline deployment time.
-                </p>
 
-                <a href="https://github.com/mathTosetto/uv_performance" target="_blank">Project</a>
+                <div class="project-card">
 
-                <img src="../assets/images/uv_project.png" alt="UV Pipeline Performance" />
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Project demonstrating how the UV library can significantly reduce
+                                CI/CD pipeline deployment time.
+                            </p>
+                        </div>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python, Unit Tests, DevOps
-                </p>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Performance</span>
+                    </div>
+
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            Long dependency resolution and installation time in pipelines.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            Adoption of UV for faster dependency management.
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Reduced pipeline execution time and faster deployments.
+                        </div>
+                    </div>
+
+                    <img src="../assets/images/uv_project.png" alt="UV Pipeline Performance" />
+
+                    <div class="footer">
+                        <div class="tools">
+                            Python · Unit Tests · DevOps
+                        </div>
+
+                        <a href="https://github.com/mathTosetto/uv_performance" target="_blank" class="cta">
+                            View Repository →
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                Streamlining daily workflows with Cookiecutter
+                <span class="title">Streamlining Daily Workflows with Cookiecutter</span>
                 <span class="icon">▾</span>
             </button>
 
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Project focused on improving productivity by generating standardized
-                    project structures using Cookiecutter.
-                </p>
 
-                <a href="https://github.com/mathTosetto/cookiecutter_streamlit" target="_blank">Cookiecutter
-                    Streamlit</a></br>
-                <a href="https://github.com/mathTosetto/cookiecutter_generic_project" target="_blank">Cookiecutter
-                    Python</a></br>
+                <div class="project-card">
 
-                <img src="../assets/images/cookiecutter.png" alt="Streamlining daily workflows with Cookiecutter"
-                    class="small-img" />
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Project focused on improving developer productivity by generating
+                                standardized and reusable project structures using Cookiecutter.
+                            </p>
+                        </div>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python, Cookiecutter
-                </p>
+                        <span class="tag">Productivity</span>
+                    </div>
+
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            Repetitive setup of similar project structures.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            Cookiecutter templates for fast project scaffolding.
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Faster onboarding and consistent project layouts.
+                        </div>
+                    </div>
+
+                    <img src="../assets/images/cookiecutter.png" alt="Streamlining daily workflows with Cookiecutter"
+                        class="small-img" />
+
+                    <div class="footer">
+                        <div class="tools">
+                            Python · Cookiecutter
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/mathTosetto/cookiecutter_streamlit" target="_blank" class="cta">
+                                Streamlit Template →
+                            </a>
+                            <a href="https://github.com/mathTosetto/cookiecutter_generic_project" target="_blank"
+                                class="cta">
+                                Generic Python Template →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <!-- Project 3 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                Variable declaration performance test
+                <span class="title">Variable Declaration Performance Test</span>
                 <span class="icon">▾</span>
             </button>
 
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Performance benchmarking project comparing different variable
-                    declaration strategies in Python.
-                </p>
 
-                <a href="https://github.com/mathTosetto/var_declaration_performance" target="_blank">Project</a>
+                <div class="project-card">
 
-                <pre><code>{
-    Int results:
-    Function declaration: 0.01401954 seconds.
-    Literal declaration: 0.00408096 seconds.
-    Declaring Int using literals is faster by 70.89%.
-}</code></pre>
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Performance benchmarking project comparing different variable
+                                declaration strategies in Python.
+                            </p>
+                        </div>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python, Benchmarking
-                </p>
+                        <span class="tag">Performance</span>
+                    </div>
+
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            Unclear performance impact of variable declaration patterns.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            Micro-benchmarks comparing function vs literal declarations.
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Identified faster declaration strategies with measurable gains.
+                        </div>
+                    </div>
+
+                    <pre><code class="language-json">
+{
+  "int_results": {
+    "function_declaration_seconds": 0.01401954,
+    "literal_declaration_seconds": 0.00408096,
+    "performance_gain_percent": 70.89
+  }
+}
+</code></pre>
+
+                    <div class="footer">
+                        <div class="tools">
+                            Python · Benchmarking
+                        </div>
+
+                        <a href="https://github.com/mathTosetto/var_declaration_performance" target="_blank"
+                            class="cta">
+                            View Repository →
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
-
         <!-- Project 4 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                Mutable default arguments
+                <span class="title">Mutable Default Arguments</span>
                 <span class="icon">▾</span>
             </button>
 
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Educational project demonstrating common pitfalls with mutable default
-                    arguments in Python functions.
-                </p>
 
-                <a href="https://github.com/mathTosetto/mutable_default_argument" target="_blank">Project</a>
+                <div class="project-card">
 
-                <pre><code>{
-    from typing import List
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Educational project demonstrating common pitfalls caused by
+                                mutable default arguments in Python function definitions.
+                            </p>
+                        </div>
 
-    def add_to_list_mutable_default(item: str, list_items: List[str] = []) -> List[str]:
-        list_items.append(item)
-        return list_items
+                        <span class="tag">Performance</span>
+                    </div>
 
-    print("Mutable Default Argument")
-    print(add_to_list_mutable_default("banana"))  # ['banana']
-    print(add_to_list_mutable_default("apple"))  # ['banana', 'apple']
-    print("-" * 40)
-}</code></pre>
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            Default mutable arguments persist across function calls.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            Demonstration of incorrect behavior to highlight the issue.
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Clear understanding of why immutable defaults should be used.
+                        </div>
+                    </div>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python
-                </p>
+                    <pre><code class="language-python">
+from typing import List
+
+def add_to_list_mutable_default(item: str, list_items: List[str] = []) -> List[str]:
+    list_items.append(item)
+    return list_items
+
+print("Mutable Default Argument")
+print(add_to_list_mutable_default("banana"))  # ['banana']
+print(add_to_list_mutable_default("apple"))   # ['banana', 'apple']
+print("-" * 40)
+</code></pre>
+
+                    <div class="footer">
+                        <div class="tools">
+                            Python
+                        </div>
+
+                        <a href="https://github.com/mathTosetto/mutable_default_argument" target="_blank" class="cta">
+                            View Repository →
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
 
-        <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
 </body>
 
 </html>
