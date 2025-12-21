@@ -206,6 +206,7 @@ hr {
   padding: 36px;
   border-radius: 12px;
   animation: fadeInUp 0.8s ease forwards;
+  border-left: 3px solid #ff9f43;
 }
 
 .about h2 {
@@ -325,7 +326,7 @@ hr {
 
 .article-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
   padding: 18px;
   background: #16161a;
@@ -343,6 +344,31 @@ hr {
   border-radius: 8px;
 }
 
+.article-card h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.article-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #bbb;
+  margin: 4px 0 6px;
+}
+
+.article-card:hover img {
+  transform: scale(1.03);
+}
+
+.article-card img {
+  transition: transform 0.3s ease;
+}
+
+.article-card.spark  { border-left: 3px solid #ff9f43; }
+.article-card.code   { border-left: 3px solid #4ea1ff; }
+.article-card.azure  { border-left: 3px solid #3ddc97; }
+.article-card.sql    { border-left: 3px solid #c77dff; }
+
 .article-card span {
   font-size: 16px;
   font-weight: 600;
@@ -352,6 +378,25 @@ hr {
   transform: translateY(-4px);
   border-color: #4ea1ff;
   background: #1c1c22;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.article-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.article-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4ea1ff;
 }
 
 /* =========================
