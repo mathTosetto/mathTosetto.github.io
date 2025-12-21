@@ -46,7 +46,7 @@
                             </p>
                         </div>
 
-                        <span class="tag">Data Engineering</span>
+                        <span class="tag">Data Quality</span>
                     </div>
 
                     <div class="highlights">
@@ -83,19 +83,46 @@
 
         <!-- Project 2 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                Enhanced Logs
+                <span class="title">Enhanced Logs</span>
                 <span class="icon">▾</span>
             </button>
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Project to create a robust logging system. Logs are output in plain text
-                    and JSON format.
-                </p>
 
-                <a href="https://github.com/mathTosetto/logging_example" target="_blank">Project</a>
+                <div class="project-card">
 
-                <pre><code>{
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Designed a structured logging framework producing human-readable and machine-parsable
+                                logs.
+                            </p>
+                        </div>
+
+                        <span class="tag">Observability</span>
+                    </div>
+
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            Logs hard to query and analyze.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            Dual-format logging (text + JSON).
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Improved debugging and log ingestion.
+                        </div>
+                    </div>
+
+                    <pre><code>{
     "level": "ERROR",
     "message": "Error message",
     "timestamp": "2023-12-23T15:45:01+00:00",
@@ -107,67 +134,73 @@
     "exc_info": "ZeroDivisionError"
 }</code></pre>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python, Unit Tests
-                </p>
+                    <div class="footer">
+                        <div class="tools">
+                            Python · Unit Tests · Logging
+                        </div>
+
+                        <a href="https://github.com/mathTosetto/logging_example" target="_blank" class="cta">
+                            View Repository →
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <!-- Project Card -->
-        <section class="project-card">
-            <header>
-                <h3>Enhanced Logging System</h3>
-                <span class="tag">Observability</span>
-            </header>
-
-            <p class="summary">
-                Designed a structured logging framework producing human-readable and machine-parsable logs.
-            </p>
-
-            <div class="highlights">
-                <div><strong>Problem:</strong> Logs hard to query and analyze.</div>
-                <div><strong>Solution:</strong> Dual-format logging (text + JSON).</div>
-                <div><strong>Outcome:</strong> Improved debugging and log ingestion.</div>
-            </div>
-
-            <pre><code>{
-  "level": "ERROR",
-  "message": "Error message",
-  "timestamp": "2023-12-23T15:45:01+00:00",
-  "logger": "my_app",
-  "module": "main",
-  "function": "main",
-  "line": 35
-}</code></pre>
-
-            <div class="footer">
-                <div class="tools">
-                    Python · Unit Tests
-                </div>
-                <a href="https://github.com/mathTosetto/logging_example" target="_blank" class="cta">
-                    View Repository →
-                </a>
-            </div>
-        </section>
-
         <!-- Project 3 -->
         <div class="accordion">
+
+            <!-- Collapsible Header -->
             <button class="accordion-header">
-                Web scraping
+                <span class="title">Product Catalog Web Scraper</span>
                 <span class="icon">▾</span>
             </button>
+            <!-- Expandable Content -->
             <div class="accordion-content">
-                <p>
-                    Web scraping project to extract product data from a supermarket website.
-                </p>
 
-                <a href="https://github.com/mathTosetto/product_catalog_scraper" target="_blank">Project</a></br>
+                <div class="project-card">
 
-                <img src="../assets/images/web_scraper.png" alt="Web Scraper" class="small-img" />
+                    <!-- Overview row -->
+                    <div class="overview-row">
+                        <div class="overview-text">
+                            <span class="overview-label">Overview</span>
+                            <p class="summary">
+                                Scraper to extract and structure product data from a supermarket website.
+                            </p>
+                        </div>
 
-                <p class="tools">
-                    <strong>Tools:</strong> Python, BeautifulSoup
-                </p>
+                        <span class="tag">Data Extraction</span>
+                    </div>
+
+                    <div class="highlights">
+                        <div>
+                            <strong>Problem</strong><br />
+                            No structured access to product data.
+                        </div>
+                        <div>
+                            <strong>Solution</strong><br />
+                            HTML parsing and normalization.
+                        </div>
+                        <div>
+                            <strong>Outcome</strong><br />
+                            Reusable dataset for analytics.
+                        </div>
+                    </div>
+
+                    <img src="../assets/images/web_scraper.png" alt="Web Scraper" class="small-img" />
+
+                    <div class="footer">
+                        <div class="tools">
+                            Python · BeautifulSoup
+                        </div>
+
+                        <a href="https://github.com/mathTosetto/product_catalog_scraper" target="_blank" class="cta">
+                            View Repository →
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
 
