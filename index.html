@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Matheus Tosetto</title>
+    <title>Portfolio - Matheus Tosetto</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -11,8 +11,7 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-left">Portfolio</div>
-        <div class="nav-right">
+        <div class="nav-center">
             <a href="index.html" class="active">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/python-projects.html">Python Projects</a>
@@ -21,40 +20,67 @@
     </nav>
 
     <!-- Hero Section -->
-    <main class="container">
+    <main>
         <section class="page-container hero">
-            <section class="hero">
-                <div class="avatar">
-                    <img src="assets/images/photo-profile.jpeg" alt="Avatar" />
+            <div class="avatar">
+                <img src="assets/images/photo-profile.jpeg" alt="Avatar" />
+            </div>
+
+            <div class="hero-content">
+                <h1>Matheus Tosetto</h1>
+                <h3>Data Engineer @ AXA Ireland</h3>
+
+                <div class="skills">
+                    <span>Python</span>
+                    <span>Azure</span>
+                    <span>MLOps</span>
+                    <span>SQL</span>
                 </div>
+                <hr />
 
-                <div class="hero-content">
-                    <h1>Matheus Tosetto</h1>
-                    <h3>Data Engineer @ AXA Ireland</h3>
-
-                    <p class="skills">Python | Azure | MLOps</p>
-                    <hr />
-
-                    <div class="buttons">
-                        <a href="https://www.linkedin.com/in/matheus-brizolla/" target="_blank"
-                            class="btn linkedin">LinkedIn</a>
-                        <a href="https://github.com/mathTosetto" target="_blank" class="btn github">GitHub</a>
-                        <a href="mailto:22848645+mathTosetto@users.noreply.github.com" class="btn email">Email</a>
-                        <a href="#" class="btn cv">Curriculum Vitae</a>
-                    </div>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/matheus-brizolla/" target="_blank">
+                        <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge"
+                            alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/mathTosetto" target="_blank">
+                        <img src="https://img.shields.io/badge/GitHub-black?logo=github&style=for-the-badge"
+                            alt="GitHub">
+                    </a>
+                    <a href="mailto:22848645+mathTosetto@users.noreply.github.com">
+                        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+                            alt="Email">
+                    </a>
+                    <a href="./assets/docs/curriculum-vitae.pdf" download>
+                        <img src="https://img.shields.io/badge/Curriculum%20Vitae-darkblue?style=for-the-badge&logo=abdownloadmanager&logoColor=white"
+                            alt="CV">
+                    </a>
                 </div>
-            </section>
+            </div>
         </section>
 
-        <!-- About Me -->
-        <section class="page-container hero">
-            <section class="about-card">
-                <h2>Who am I</h2>
+        <!-- About -->
+        <section class="page-container">
+            <div class="about-card">
+                <h2>About me</h2>
                 <p>
-                    Data Engineer focused on building reliable data platforms, MLOps pipelines,
-                    and automation in cloud environments.
+                    I'm a Data Engineer focused on building reliable, scalable data platforms and MLOps
+                    pipelines in cloud environments.
                 </p>
-            </section>
+                <p>
+                    I enjoy working at the intersection of data quality, automation, and platform
+                    engineering, turning complex data problems into maintainable, production-ready
+                    solutions.
+                </p>
+                <hr />
+                <h3 class="about-subtitle">Highlights</h3>
+                <ul>
+                    <li>10+ years working with data engineering and analytics</li>
+                    <li>Cloud-native platforms on Azure</li>
+                    <li>End-to-end MLOps and pipeline automation</li>
+                    <li>Experience across banking, insurance, and technology sectors</li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>

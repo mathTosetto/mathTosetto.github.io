@@ -20,22 +20,22 @@ h2 {
 hr {
   border: none;
   border-top: 1px solid #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* =========================
    Layout
 ========================= */
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
 .container {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 /* =========================
@@ -43,24 +43,25 @@ hr {
 ========================= */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 15px 40px;
   border-bottom: 1px solid #2a2a2a;
 }
 
-.nav-left {
-  font-weight: 600;
+.nav-center {
+  display: flex;
+  flex-direction: row;
 }
 
-.nav-right a {
+.nav-center a {
   margin-left: 20px;
   text-decoration: none;
   color: #bbb;
 }
 
-.nav-right a:hover,
-.nav-right a.active {
+.nav-center a:hover,
+.nav-center a.active {
   color: #fff;
 }
 
@@ -69,10 +70,11 @@ hr {
 ========================= */
 .hero {
   display: flex;
-  gap: 60px;
+  gap: 20px;
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px 0;
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -84,12 +86,14 @@ hr {
 }
 
 .avatar img {
-  width: 200px;
+  width: 280px;
   max-width: 100%;
+  border-radius: 8px;
 }
 
 .hero-content {
   animation: fadeInUp 0.8s ease forwards;
+  max-width: 520px;
 }
 
 .hero-content h1 {
@@ -104,7 +108,18 @@ hr {
 }
 
 .skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   margin: 20px 0;
+}
+
+.skills span {
+  background: #1a1a1f;
+  border: 1px solid #2a2a2a;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -174,6 +189,7 @@ hr {
   border-radius: 6px;
   margin-bottom: 15px;
   overflow: hidden;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .accordion-header {
@@ -266,6 +282,7 @@ hr {
   list-style: none;
   padding: 0;
   margin: 0;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .article-list li {
