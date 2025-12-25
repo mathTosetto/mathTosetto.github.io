@@ -3,3 +3,6 @@
 
 # Python scripts
 *.py
+
+# DS store files
+.DS_Store
