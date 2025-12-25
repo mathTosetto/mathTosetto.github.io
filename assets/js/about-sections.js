@@ -137,6 +137,15 @@ const certifications = {
       <li>Industry insights from senior FAANG-level engineer.</li>
     </ul>
   `,
+  "Sep 2024": `
+  <h3>Azure Data Engineer Associate (DP-203)</h3>
+  <p><em>Microsoft · Sep 2024</em></p>
+  <ul>
+    <li>Designing and implementing data ingestion and transformation pipelines using Azure data services.</li>
+    <li>Building and optimizing data storage solutions for analytical workloads.</li>
+    <li>Implementing data security, monitoring, and performance tuning in Azure-based data platforms.</li>
+  </ul>
+  `,
   "Jun 2024": `
     <h3>Azure Data Fundamentals (DP-900)</h3>
     <p><em>Microsoft · Jun 2024</em></p>
@@ -153,6 +162,15 @@ const certifications = {
       <li>Core cloud concepts.</li>
       <li>Azure services and governance.</li>
     </ul>
+  `,
+  "Sep 2022": `
+  <h3>Databricks Lakehouse Fundamentals</h3>
+  <p><em>Databricks · Sep 2022</em></p>
+  <ul>
+    <li>Core concepts of the Lakehouse architecture combining data lakes and data warehouses.</li>
+    <li>Introduction to Apache Spark and Databricks workspace fundamentals.</li>
+    <li>Understanding Delta Lake features such as ACID transactions, versioning, and schema enforcement.</li>
+  </ul>
   `
 };
 
