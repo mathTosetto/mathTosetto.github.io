@@ -585,3 +585,180 @@ hr {
   color: #888;
   margin-bottom: 6px;
 }
+
+/* =========================
+   Toggle Sections
+========================= */
+.toggle-section {
+    display: none;
+}
+
+.toggle-section.active {
+    display: block;
+}
+
+/* Toggle buttons */
+.section-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.toggle-btn.active {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+/* =========================
+   Experience Content
+========================= */
+.experience-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.experience-content.fade-out {
+    opacity: 0;
+    transform: translateY(6px);
+}
+
+.experience-content ul {
+    margin-left: 1.2rem;
+}
+
+.experience-content li {
+    margin-bottom: 0.4rem;
+}
+
+/* =========================
+   Timeline
+========================= */
+.timeline {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.timeline-item:hover {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.timeline-item.active {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.timeline-horizontal {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 2.5rem;
+    padding: 0 1rem;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #f39c12;
+    z-index: 0;
+}
+
+.timeline-point {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-point::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #f39c12;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.timeline-point.active::before {
+    transform: scale(1.4);
+}
+
+.timeline-point:hover::before {
+    transform: scale(1.2);
+}
+
+.timeline-point .year {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.timeline-point.active .year {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.timeline-horizontal {
+    direction: ltr;
+}
+
+.timeline-point::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #f39c12;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+/* Selected year = filled */
+.timeline-point.active::before {
+    background: #f39c12;
+}
+
+/* Hover feedback */
+.timeline-point:hover::before {
+    transform: scale(1.15);
+}
+
+.timeline-point .year {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.timeline-point.active .year {
+    color: #f39c12;
+    font-weight: 600;
+}

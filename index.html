@@ -72,28 +72,108 @@
 
         <!-- About -->
         <section class="page-container">
-            <div class="about-card about">
-                <h2>About me</h2>
-                <p>
-                    I'm a Data Engineer focused on building reliable, scalable data platforms and MLOps pipelines
-                    in cloud environments.
-                </p>
-                <p>
-                    I enjoy working at the intersection of data quality, automation, and platform engineering. 
-                    Turning complex data problems into maintainable, production-ready solutions.
-                </p>
-                <hr />
-                <h3 class="about-subtitle">Highlights</h3>
-                <ul>
-                    <li>10+ years in data engineering and analytics</li>
-                    <li>Cloud-native platforms on Azure</li>
-                    <li>End-to-end MLOps and pipeline automation</li>
-                    <li>Experience across banking, insurance, and technology sectors</li>
-                </ul>
-                <hr />
-            </div>
+            <div class="about-card">
+
+                <!-- Toggle buttons -->
+                <div class="section-toggle">
+                    <button class="toggle-btn active" onclick="showSection('about', this)">About Me</button>
+                    <button class="toggle-btn" onclick="showSection('experience', this)">Work Experience</button>
+                    <button class="toggle-btn" onclick="showSection('certifications', this)">Certifications</button>
+
+                </div>
+
+                <!-- About -->
+                <div id="about" class="toggle-section active">
+                    <h2>About me</h2>
+                    <p>
+                        I'm a Data Engineer focused on building reliable, scalable data platforms and MLOps pipelines
+                        in cloud environments.
+                    </p>
+                    <p>
+                        I enjoy working at the intersection of data quality, automation, and platform engineering.
+                        Turning complex data problems into maintainable, production-ready solutions.
+                    </p>
+                    <hr />
+                    <h3 class="about-subtitle">Highlights</h3>
+                    <ul>
+                        <li>10+ years in data engineering and analytics</li>
+                        <li>Cloud-native platforms on Azure</li>
+                        <li>End-to-end MLOps and pipeline automation</li>
+                        <li>Experience across banking, insurance, and technology sectors</li>
+                    </ul>
+                </div>
+
+                <!-- Work Experience -->
+                <div id="experience" class="toggle-section">
+
+                    <h2>Work Experience</h2>
+
+                    <div class="timeline-horizontal">
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-point active" onclick="loadExperience('2021 - Present', this)">
+                            <span class="year">2021 - Present</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadExperience('2022 - 2023', this)">
+                            <span class="year">2022 - 2023</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadExperience('2021 - 2022', this)">
+                            <span class="year">2021 - 2022</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadExperience('2018 - 2021', this)">
+                            <span class="year">2018 - 2021</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadExperience('2016 - 2018', this)">
+                            <span class="year">2016 - 2018</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadExperience('2015 - 2016', this)">
+                            <span class="year">2015 - 2016</span>
+                        </div>
+                    </div>
+
+                    <div id="experience-content" class="experience-content"></div>
+
+                </div>
+
+                <!-- Certifications -->
+                <div id="certifications" class="toggle-section">
+
+                    <h2>Certifications</h2>
+
+                    <div class="timeline-horizontal">
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-point active" onclick="loadCertification('Feb 2025', this)">
+                            <span class="year">Feb 2025</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadCertification('Jan 2025', this)">
+                            <span class="year">Jan 2025</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadCertification('Jun 2024', this)">
+                            <span class="year">Jun 2024</span>
+                        </div>
+
+                        <div class="timeline-point" onclick="loadCertification('Dec 2023', this)">
+                            <span class="year">Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div id="certification-content" class="experience-content"></div>
+
+                </div>
+
+
         </section>
+
     </main>
 </body>
+<script src="assets/js/about-sections.js"></script>
 
 </html>
