@@ -130,7 +130,7 @@ const certifications = {
   `,
   "Feb 2025": `
     <h3>Astronomer Certification for Apache Airflow Fundamentals</h3>
-    <p><em>Online Course · Feb 2025</em></p>
+    <p><em>Astronomer · Feb 2025</em></p>
     <ul>
       <li>Airflow DAGs, operators, scheduling.</li>
       <li>Production-ready pipeline best practices.</li>
