@@ -119,6 +119,15 @@ const experiences = {
 // Certifications data
 // =====================================================
 const certifications = {
+  "Jan 2026": `
+    <h3>Databricks Certified Data Engineer Associate</h3>
+    <p><em>Databricks · Jan 2026</em></p>
+    <ul>
+      <li>Lakehouse Platform architecture and Delta Lake management.</li>
+      <li>ETL pipelines with Delta Live Tables (DLT) and Medallion Architecture.</li>
+      <li>Data governance with Unity Catalog and SQL warehouse optimization.</li>
+    </ul>
+  `,
   "Feb 2025": `
     <h3>Astronomer Certification for Apache Airflow Fundamentals</h3>
     <p><em>Online Course · Feb 2025</em></p>
