@@ -18,19 +18,11 @@ function showSection(sectionId, btn) {
 
   // Lazy-load content based on section
   if (sectionId === "experience") {
-    initTimeline(
-      "#experience",
-      loadExperience,
-      "#experience-content"
-    );
+    initTimeline("#experience", loadExperience);
   }
 
   if (sectionId === "certifications") {
-    initTimeline(
-      "#certifications",
-      loadCertification,
-      "#certification-content"
-    );
+    initTimeline("#certifications", loadCertification);
   }
 }
 
