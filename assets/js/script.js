@@ -13,9 +13,14 @@ document.querySelectorAll(".accordion-header").forEach(button => {
             i.textContent = "▾";
         });
 
+        document.querySelectorAll(".accordion-header").forEach(b => {
+            b.classList.remove("active");
+        });
+
         if (!isOpen) {
             content.style.display = "block";
             icon.textContent = "▴";
+            button.classList.add("active");
         }
     });
 });

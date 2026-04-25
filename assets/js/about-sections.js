@@ -53,40 +53,40 @@ function initTimeline(sectionSelector, loaderFn) {
 // Experience data
 // =====================================================
 const experiences = {
-  "2021 - Present": `
+  "2023 - Present": `
     <h3>Data Engineer @ AXA Ireland</h3>
-    <p><em>2021 - Present</em></p>
+    <p><em>Aug 2023 - Present</em></p>
     <ul>
-      <li>Partnered with a Data Scientist to build a GenAI-powered application for Claims Handlers.</li>
-      <li>Built MLOps pipelines automating training and inference.</li>
-      <li>Designed automated data pipelines for actuarial analytics.</li>
+      <li>Partnered with a Data Scientist to build a GenAI-powered application for Claims Handlers, improving document summarization and chatbot-based query resolution.</li>
+      <li>Built an MLOps pipeline automating model training and inference, enabling early claim settlements and delivering significant cost savings.</li>
+      <li>Designed and deployed automated data pipelines to support actuarial analytics and reporting.</li>
     </ul>
   `,
   "2022 - 2023": `
     <h3>Data Analyst @ Huawei</h3>
     <p><em>Sep 2022 - Jul 2023</em></p>
     <ul>
-      <li>Automated daily operational checks using Python.</li>
-      <li>Migrated bash and SQL processes to Irish servers.</li>
-      <li>Improved app downloads by 12%.</li>
+      <li>Increased downloads for 3 gaming applications by 12% through targeted ad audience analysis.</li>
+      <li>Developed a Python automation script to monitor 30+ daily processes, feeding an internal FineBI performance report.</li>
+      <li>Collaborated with SRE teams in Germany on the migration of 50+ processes to servers in Ireland, improving process performance.</li>
     </ul>
   `,
   "2021 - 2022": `
     <h3>Data Engineer @ Itaú Unibanco</h3>
     <p><em>Feb 2021 - Apr 2022</em></p>
     <ul>
-      <li>Built Python ETL pipelines.</li>
-      <li>Modernized legacy DataStage pipelines.</li>
-      <li>Designed AWS-based data infrastructure.</li>
+      <li>Built a Python-based partner rewards system integrating data from 5 sources, boosting brand marketing performance by 5%.</li>
+      <li>Modernized 5 legacy IBM DataStage pipelines to Python and Hadoop, in preparation for migrating all on-premises data to AWS.</li>
+      <li>Collaborated with 4 Data Engineers to migrate data infrastructure to AWS, building services with S3, Redshift, and Glue.</li>
     </ul>
   `,
   "2018 - 2021": `
     <h3>Data Analyst @ Itaú Unibanco</h3>
     <p><em>Aug 2018 - Jan 2021</em></p>
     <ul>
-      <li>Reduced processing time from 2h to 15min.</li>
-      <li>Saved R$2M monthly through analytics.</li>
-      <li>Improved NPS and contact rates.</li>
+      <li>Migrated card inventory process from Hadoop to SQL Server, reducing execution time from 2 hours to 15 minutes.</li>
+      <li>Optimized card production using Python, reducing ink usage and saving R$2M (~$400K) per month.</li>
+      <li>Improved customer contact success by 15% through Python-based email quality analysis and call center collaboration.</li>
     </ul>
   `,
   "2016 - 2018": `
@@ -204,6 +204,11 @@ function loadCertification(year, element) {
 // Shared content transition
 // =====================================================
 function swapContent(container, html) {
+  if (!container.innerHTML.trim()) {
+    container.innerHTML = html;
+    return;
+  }
+
   container.classList.add("fade-out");
 
   setTimeout(() => {
