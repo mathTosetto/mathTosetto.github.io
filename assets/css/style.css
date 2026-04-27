@@ -353,21 +353,71 @@ hr {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 20px 16px;
   }
 
   .avatar {
     min-width: unset;
   }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .value-prop {
+    max-width: 100%;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
+  .page-container {
+    padding: 0 16px;
+  }
+
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .nav-center {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .nav-center a {
+    font-size: 15px;
+    margin-left: 0;
+    padding: 4px 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
   .articles-grid {
     grid-template-columns: 1fr;
   }
 
-  .nav-center a {
-    font-size: 16px;
-    margin-left: 12px;
+  .article-card {
+    flex-direction: column;
+  }
+
+  .article-card img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .section-toggle {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   .timeline-horizontal {
@@ -388,6 +438,30 @@ hr {
 
   .timeline-point .year {
     font-size: 0.75rem;
+  }
+
+  .overview-row {
+    flex-direction: column;
+  }
+
+  .overview-text {
+    max-width: 100%;
+  }
+
+  .small-img {
+    height: auto;
+  }
+
+  pre {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .site-footer {
+    padding: 16px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }
 
